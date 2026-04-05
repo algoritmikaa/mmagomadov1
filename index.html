@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Lumina Dental | Современная стоматология</title>
+    <!-- Google Fonts & FontAwesome 6 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <div class="bg-abstract"></div> <!-- абстрактные фоновые элементы -->
+
+    <!-- ШАПКА / НАВИГАЦИЯ -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-tooth"></i>
+                <span>Lumina Dental</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- мобильное меню (выпадающее) -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contact">Контакты</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ГЕРОЙ СЕКЦИЯ -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">Улыбка, которой <span class="accent-text">доверяют</span></h1>
+                    <p class="hero-desc">Современные технологии, безболезненное лечение и индивидуальный подход. Вернём вам здоровье и красоту улыбки уже сегодня.</p>
+                    <button class="btn btn-primary btn-ripple">Записаться на приём <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="hero-illustration">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                    <i class="fas fa-stethoscope hero-icon"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ УСЛУГ -->
+        <section id="services" class="services section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Наши услуги</h2>
+                    <p>Забота о вашей улыбке — наша главная миссия</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Карточка 1 -->
+                    <div class="glass-card service-card reveal">
+                        <div class="service-icon"><i class="fas fa-gem"></i></div>
+                        <h3>Имплантация</h3>
+                        <p>Надёжное восстановление зубов с использованием премиум-имплантов. Результат на десятилетия.</p>
+                        <div class="service-footer">
+                            <span class="price">от 35 000 ₽</span>
+                            <button class="btn-outline-small">Подробнее</button>
+                        </div>
+                    </div>
+                    <!-- Карточка 2 -->
+                    <div class="glass-card service-card reveal">
+                        <div class="service-icon"><i class="fas fa-smile"></i></div>
+                        <h3>Отбеливание</h3>
+                        <p>Безопасная система ZOOM! 4.0, осветление до 12 тонов за один визит.</p>
+                        <div class="service-footer">
+                            <span class="price">от 12 000 ₽</span>
+                            <button class="btn-outline-small">Подробнее</button>
+                        </div>
+                    </div>
+                    <!-- Карточка 3 -->
+                    <div class="glass-card service-card reveal">
+                        <div class="service-icon"><i class="fas fa-broom"></i></div>
+                        <h3>Профессиональная чистка</h3>
+                        <p>AirFlow + ультразвук, удаление камня и налёта. Деликатно и эффективно.</p>
+                        <div class="service-footer">
+                            <span class="price">от 5 500 ₽</span>
+                            <button class="btn-outline-small">Подробнее</button>
+                        </div>
+                    </div>
+                    <!-- Карточка 4 -->
+                    <div class="glass-card service-card reveal">
+                        <div class="service-icon"><i class="fas fa-tooth"></i></div>
+                        <h3>Лечение кариеса</h3>
+                        <p>Лечение любой сложности с микроскопом. Без боли и повторных визитов.</p>
+                        <div class="service-footer">
+                            <span class="price">от 4 500 ₽</span>
+                            <button class="btn-outline-small">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ О НАС -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <h2>О клинике Lumina Dental</h2>
+                        <p>Мы объединили передовые технологии, комфорт и экспертность ведущих стоматологов. Наша цель — сделать каждое посещение приятным, а результат — безупречным.</p>
+                        <div class="advantages">
+                            <div class="advantage-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div><strong>100% стерильность</strong><br>Многоступенчатая система очистки</div>
+                            </div>
+                            <div class="advantage-item">
+                                <i class="fas fa-user-md"></i>
+                                <div><strong>Опыт 15+ лет</strong><br>Врачи высшей категории</div>
+                            </div>
+                            <div class="advantage-item">
+                                <i class="fas fa-microscope"></i>
+                                <div><strong>Цифровые технологии</strong><br>3D-диагностика и CAD/CAM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-illustration reveal">
+                        <div class="glass-card stats-card">
+                            <div class="stat"><span class="stat-number">5 200+</span><span>счастливых пациентов</span></div>
+                            <div class="stat"><span class="stat-number">98%</span><span>рекомендуют нас</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ ОТЗЫВОВ -->
+        <section id="reviews" class="reviews section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Отзывы наших пациентов</h2>
+                    <p>Реальные истории и искренние эмоции</p>
+                </div>
+                <div class="reviews-grid">
+                    <!-- отзыв 1 -->
+                    <div class="glass-card review-card reveal">
+                        <div class="review-header">
+                            <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                            <div class="reviewer-info">
+                                <h4>Анна Ковалёва</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">“Поставила имплант — даже не заметила, как всё прошло. Клиника стерильная, персонал внимательный. Теперь вся семья ходит только сюда!”</p>
+                    </div>
+                    <!-- отзыв 2 -->
+                    <div class="glass-card review-card reveal">
+                        <div class="review-header">
+                            <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                            <div class="reviewer-info">
+                                <h4>Михаил Петров</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">“Отбеливание ZOOM — вау-эффект! Чисто, современно, доктор всё объяснил. Очень рад, что выбрал Lumina Dental.”</p>
+                    </div>
+                    <!-- отзыв 3 -->
+                    <div class="glass-card review-card reveal">
+                        <div class="review-header">
+                            <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                            <div class="reviewer-info">
+                                <h4>Елена Смирнова</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">“Лечили кариес сыну — подход нашли сразу, анестезия комфортная. Огромное спасибо за чуткость!”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo"><i class="fas fa-tooth"></i> Lumina Dental</div>
+                <p>Современная стоматология премиум-класса. Заботимся о вашей улыбке с 2010 года.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <ul class="footer-contacts">
+                    <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Пушкина, Дом Колотушкина 67</li>
+                    <li><i class="fas fa-phone-alt"></i> +7 (999) 380-20-14</li>
+                    <li><i class="fas fa-envelope"></i> ggg12346578f@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Часы работы</h4>
+                <ul class="footer-hours">
+                    <li>Пн–Пт: 9:00 – 21:00</li>
+                    <li>Сб: 10:00 – 18:00</li>
+                    <li>Вс: выходной</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lumina Dental. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ---------- ТЕМНАЯ / СВЕТЛАЯ ТЕМА (переключение классов) ----------
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Функция для установки темы
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Проверка сохраненной темы или системных настроек
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            setTheme(prefersDark ? 'dark' : 'light');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            const isDark = body.classList.contains('dark-theme');
+            setTheme(isDark ? 'light' : 'dark');
+        });
+        
+        // ---------- МОБИЛЬНОЕ МЕНЮ ----------
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        mobileBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            // смена иконки
+            const icon = mobileBtn.querySelector('i');
+            if (mobileNav.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Закрывать мобильное меню при клике на ссылку
+        const mobileLinks = mobileNav.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('open');
+                const icon = mobileBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // ---------- АНИМАЦИЯ ПРИ СКРОЛЛЕ (Intersection Observer) ----------
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: "0px 0px -30px 0px" });
+        
+        revealElements.forEach(el => revealObserver.observe(el));
+        
+        // Добавим эффект для кнопки "Записаться" (простой alert для демо)
+        const bookBtns = document.querySelectorAll('.btn-primary, .btn-outline-small');
+        bookBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                if(btn.classList.contains('btn-primary') || btn.innerText.includes('Подробнее') || btn.innerText.includes('Записаться')) {
+                    e.preventDefault();
+                    alert('✨ Спасибо! Форма записи откроется в ближайшее время. Позвоните нам +7 (495) 123-45-67');
+                }
+            });
+        });
+        
+        // Дополнительно добавим динамический год в копирайт (уже есть статический)
+        document.querySelector('.footer-bottom p').innerHTML = `&copy; ${new Date().getFullYear()} Lumina Dental. Все права защищены.`;
+    </script>
+</body>
+</html>
